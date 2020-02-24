@@ -1,0 +1,16 @@
+{
+  "name": "serverless-docker-server",
+  "version": "0.1.0",
+  "description": "Run your serverless functions locally via Express and Docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": ["serverless", "express", "docker", "javascript"],
+  "author": "Ilgaz Can",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "yaml": "^1.7.2"
+  }
+}

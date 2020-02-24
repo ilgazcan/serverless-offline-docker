@@ -1,0 +1,28 @@
+service: serverless-offline-docker
+app: serverless-offline-docker
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+  stage: prod
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: get
+  ping:
+    handler: handler.ping
+    events:
+      - http:
+          path: /ping
+          method: get
+  time:
+    handler: handler.time
+    events:
+      - http:
+          path: /time
+          method: get
